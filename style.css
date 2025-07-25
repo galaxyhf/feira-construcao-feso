@@ -49,7 +49,7 @@ main {
 
 section.apresentacao,
 section.programacao {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -89,6 +89,14 @@ ul li {
   transition: background-color 0.3s;
 }
 
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
 .botao:hover {
   background-color: #2a804d;
 }
@@ -111,4 +119,81 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+}
+
+.palestrante {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #333;
+  margin-top: 0.3rem;
+}
+
+.temporizador {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.temporizador h3 {
+  color: var(--cor-azul);
+  margin-bottom: 1rem;
+}
+
+.contador {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.contador span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--cor-azul);
+}
+
+.img-apresentacao {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.patrocinadores {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.patrocinadores h3 {
+  font-size: 1.5rem;
+  color: var(--cor-azul);
+  margin-bottom: 1.5rem;
+}
+
+.logos-patrocinadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logos-patrocinadores img {
+  height: 80px;
+  max-width: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logos-patrocinadores img:hover {
+  transform: scale(1.05);
+}
+
+.logo-arq {
+  height: 95px !important;
 }
