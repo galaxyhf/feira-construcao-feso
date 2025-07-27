@@ -13,25 +13,74 @@
 
   <main>
     <section class="programacao">
-      <h2>Dias 3 e 4 de outubro de 2025</h2>
-      <ul>
-        <li><strong>08:00</strong> - Abertura Oficial</li>
-        <li><strong>09:00</strong> - Palestra: Sustentabilidade na Construção<br />
-        <span class="palestrante">Com Eng. Ana Martins</span></li>
-        <li><strong>10:30</strong> - Coffee Break</li>
-        <li><strong>11:00</strong> - Mesa Redonda: Inovações Tecnológicas</li>
-        <li><strong>14:00</strong> - Oficina: Materiais Sustentáveis na Prática</li>
-        <li><strong>16:00</strong> - Encerramento do Dia</li>
-      </ul>
-    </section>
+  <button class="dia-toggle" onclick="toggleDia('dia3')">
+    Dia 3 de outubro - Sexta-feira
+  </button>
+  <ul id="dia3" class="dia-conteudo">
+    <li><strong>08:00 às 09:00</strong> - Abertura Oficial</li>
+    <li><strong>09:00 às 10:30</strong> - Palestra ponte rio-niterói e concreto submerso<br />
+      <span class="palestrante">Com Eng. Tecnólogo</span>
+    </li>
+    <li><strong>10:30 às 11:00</strong> - Coffee Break</li>
+    <li><strong>11:00 às 12:30</strong> - Palestra<br />
+      <span class="palestrante">Com especialistas convidados</span>
+    </li>
+    <li><strong>12:30 às 14:00</strong> - Intervalo<br />
+    </li>
+    <li><strong>14:00 às 16:00</strong> - Palestra<br />
+      <span class="palestrante">Com especialistas convidados</span>
+    </li>
+    <li><strong>16:15 às 17:45</strong> - Mesa Redonda: "Da Universidade ao Mercado: Caminhos e Desafios na Engenharia e Arquitetura"
+  <div class="palestrantes-lista">
+  <div class="palestrante-item">
+    <img src="imagens/luana.png" alt="Luana Sant'Anna" />
+    <div class="info-palestrante">
+      <p class="nome">Luana Sant'Anna</p>
+      <p class="cargo">Engenheira Civil - Segurança do Trabalho</p>
+    </div>
+  </div>
+  <div class="palestrante-item">
+    <img src="imagens/tamara.png" alt="Tamara Pains" />
+    <div class="info-palestrante">
+      <p class="nome">Tamara Pains</p>
+      <p class="cargo">Arquiteta e Urbanista - Segurança do Trabalho</p>
+    </div>
+  </div>
+  <div class="palestrante-item">
+    <img src="imagens/thiago.png" alt="Thiago Lima" />
+    <div class="info-palestrante">
+      <p class="nome">Thiago Lima</p>
+      <p class="cargo">Engenheiro Ambiental e Sanitarista e Engenheiro Civil</p>
+    </div>
+  </div>
+</div>
+</li>
+  </ul>
+
+  <button class="dia-toggle" onclick="toggleDia('dia4')">
+    Dia 4 de outubro - Sábado
+  </button>
+  <ul id="dia4" class="dia-conteudo">
+    <li><strong>08:00 as 09:00</strong> - Abertura</li>
+    <li><strong>09:00 as 10:30</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
+    <li><strong>10:30 as 11:00</strong> - Coffee Break</li>
+    <li><strong>11:00 as 12:30</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
+    <li><strong>12:30 as 14:00</strong> - Intervalo</li>
+    <li><strong>14:00 as 16:00</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
+    <li><strong>16:15 as 17:45</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
+  </ul>
+</section>
 
     <div style="text-align: center;">
-      <a href="index.html" class="botao voltar">← Voltar</a>
+      <a href="index.html" class="botao voltar">Voltar</a>
     </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Unifeso. Desenvolvido por Caio G. Silva.</p>
   </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

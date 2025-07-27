@@ -29,3 +29,23 @@ function atualizarContador() {
 
 atualizarContador();
 setInterval(atualizarContador, 1000);
+
+function toggleDia(id) {
+  const el = document.getElementById(id);
+  
+  if (el.classList.contains('aberto')) {
+    el.style.height = el.scrollHeight + 'px';
+    requestAnimationFrame(() => {
+      el.style.height = '0px';
+      el.classList.remove('aberto');
+    });
+  } else {
+    el.classList.add('aberto');
+    el.style.height = 'auto';
+    const height = el.scrollHeight + 'px';
+    el.style.height = '0px';
+    requestAnimationFrame(() => {
+      el.style.height = height;
+    });
+  }
+}

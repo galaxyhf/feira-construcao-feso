@@ -57,6 +57,12 @@ section.programacao {
   margin: auto;
 }
 
+section.programacao h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--cor-azul);
+}
+
 h2 {
   color: var(--cor-azul);
   margin-bottom: 1rem;
@@ -84,9 +90,12 @@ ul li {
   background-color: var(--cor-verde);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
   margin: 1rem 1rem 0 0;
-  transition: background-color 0.3s;
+  border-radius: 25px;
+  outline: none;
+  padding: 10px 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .botoes {
@@ -110,7 +119,7 @@ ul li {
 }
 
 .voltar {
-  background-color: var(--cor-amarelo);
+  background-color: var(--cor-verde);
   color: #000;
 }
 
@@ -125,8 +134,55 @@ footer {
   display: block;
   font-size: 0.9rem;
   font-style: italic;
-  color: #333;
+  color: rgba(78, 78, 78, 0.774);
   margin-top: 0.3rem;
+}
+
+.palestrante p {
+  margin-bottom: 0.6rem;
+}
+
+.palestrantes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.palestrante-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.palestrante-item img {
+  width: 45px;
+  height: 55px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.info-palestrante {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-palestrante .nome {
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+.info-palestrante .cargo {
+  font-style: italic;
+  color: #555;
+  margin: 0.2rem 0 0;
+}
+
+.palestrante-item p {
+  margin: 0;
+  font-style: italic;
+  color: #555;
 }
 
 .temporizador {
@@ -196,4 +252,69 @@ footer {
 
 .logo-arq {
   height: 95px !important;
+}
+
+.topo {
+  background: linear-gradient(to right, var(--cor-verde), var(--cor-azul));
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-feira {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.titulo-site h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo-site p {
+  font-size: 1rem;
+}
+
+.dia-toggle {
+  background-color: var(--cor-azul);
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1rem 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dia-toggle:hover {
+  background-color: #002f5a;
+}
+
+.dia-conteudo {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s ease, opacity 0.3s ease;
+  margin-bottom: 0;
+}
+
+.dia-conteudo.aberto {
+  opacity: 1;
+  margin-bottom: 2rem;
 }
