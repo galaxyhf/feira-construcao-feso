@@ -120,7 +120,7 @@ ul li {
 
 .voltar {
   background-color: var(--cor-verde);
-  color: #000;
+  color: #ffffff;
 }
 
 footer {
@@ -252,6 +252,15 @@ footer {
 
 .logo-arq {
   height: 95px !important;
+}
+
+.apoio-redondo img {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  height: 100px;          
+  width: 100px;          
+  object-fit: cover;      
+  padding: 6px;           
 }
 
 .topo {
