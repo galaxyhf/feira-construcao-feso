@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programação - Feira da Construção</title>
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <h1>Programação da Feira</h1>
@@ -13,71 +15,67 @@
 
   <main>
     <section class="programacao">
-  <button class="dia-toggle" onclick="toggleDia('dia3')">
-    Dia 7 de novembro - Sexta-feira
-  </button>
-  <ul id="dia3" class="dia-conteudo">
-    <li><strong>08:00 às 09:00</strong> - Abertura Oficial</li>
-    <li><strong>09:00 às 10:30</strong> - Palestra ponte rio-niterói e concreto submerso<br />
-      <span class="palestrante">Com Eng. Tecnólogo</span>
-    </li>
-    <li><strong>10:30 às 11:00</strong> - Coffee Break</li>
-    <li><strong>11:00 às 12:30</strong> - Palestra<br />
-      <span class="palestrante">Com especialistas convidados</span>
-    </li>
-    <li><strong>12:30 às 14:00</strong> - Intervalo<br />
-    </li>
-    <li><strong>14:00 às 16:00</strong> - Palestra<br />
-      <span class="palestrante">Com especialistas convidados</span>
-    </li>
-    <li><strong>15:30 às 17:00</strong> - Mesa Redonda: "Da Universidade ao Mercado: Caminhos e Desafios na Engenharia e Arquitetura"
-  <div class="palestrantes-lista">
-  <div class="palestrante-item">
-    <img src="imagens/luana.svg" alt="Luana Sant'Anna" />
-    <div class="info-palestrante">
-      <p class="nome">Luana Sant'Anna</p>
-      <p class="cargo">Engenheira Civil - Segurança do Trabalho</p>
-    </div>
-  </div>
-  <div class="palestrante-item">
-    <img src="imagens/tamara.svg" alt="Tamara Pains" />
-    <div class="info-palestrante">
-      <p class="nome">Tamara Pains</p>
-      <p class="cargo">Arquiteta e Urbanista - Segurança do Trabalho</p>
-    </div>
-  </div>
-  <div class="palestrante-item">
-    <img src="imagens/thiago.png" alt="Thiago Lima" />
-    <div class="info-palestrante">
-      <p class="nome">Thiago Lima</p>
-      <p class="cargo">Engenheiro Ambiental e Sanitarista e Engenheiro Civil</p>
-    </div>
-  </div>
-</div>
-</li>
-  </ul>
+      <button class="dia-toggle" onclick="toggleDia('dia3')">
+        Dia 7 de novembro - Sexta-feira
+      </button>
+      <ul id="dia3" class="dia-conteudo">
+        <li><strong>09:00 às 10:30</strong> - Abertura Oficial</li>
+        <li><strong>10:30 às 12:00</strong> - Palestra: "Genesis"
+        </li>
+        <li><strong>14:00 às 15:30</strong> - Palestra: "Empreendedorismo na Construção"
+          <span class="palestrante">Alex Nogueira</span>
+        </li>
+        <li><strong>15:30 às 17:00</strong> - Mesa Redonda: "Da Universidade ao Mercado: Caminhos e Desafios na
+          Engenharia e Arquitetura"
+          <div class="palestrantes-lista">
+            <div class="palestrante-item">
+              <img src="imagens/luana.svg" alt="Luana Sant'Anna" />
+              <div class="info-palestrante">
+                <p class="nome">Luana Sant'Anna</p>
+                <p class="cargo">Engenheira Civil - Segurança do Trabalho</p>
+              </div>
+            </div>
+            <div class="palestrante-item">
+              <img src="imagens/tamara.svg" alt="Tamara Pains" />
+              <div class="info-palestrante">
+                <p class="nome">Tamara Pains</p>
+                <p class="cargo">Arquiteta e Urbanista - Segurança do Trabalho</p>
+              </div>
+            </div>
+            <div class="palestrante-item">
+              <img src="imagens/thiago.png" alt="Thiago Lima" />
+              <div class="info-palestrante">
+                <p class="nome">Thiago Lima</p>
+                <p class="cargo">Engenheiro Ambiental e Sanitarista e Engenheiro Civil</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-  <button class="dia-toggle" onclick="toggleDia('dia4')">
-    Dia 8 de novembro - Sábado
-  </button>
-  <ul id="dia4" class="dia-conteudo">
-    <li><strong>08:00 as 09:00</strong> - Abertura</li>
-    <li><strong>09:00 as 10:30</strong> - Palestra: "O Que Ninguém Te Conta Sobre Uma Usina de Concreto" <div class="palestrantes-lista">
-  <div class="palestrante-item">
-    <img src="imagens/Fábio Augustin.jpg" alt="Fábio Augustin" />
-    <div class="info-palestrante">
-      <p class="nome">Fábio Augustin</p>
-      <p class="cargo">Engenheiro Civil na Aditibras - Especialista em Tecnologia do Concreto</p>
-    </div>
-  </div>
-</li>
-    <li><strong>10:30 as 11:00</strong> - Coffee Break</li>
-    <li><strong>11:00 as 12:30</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
-    <li><strong>12:30 as 14:00</strong> - Intervalo</li>
-    <li><strong>14:00 as 16:00</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
-    <li><strong>16:15 as 17:45</strong> - Palestra <span class="palestrante">Com especialistas convidados</span></li>
-  </ul>
-</section>
+      <button class="dia-toggle" onclick="toggleDia('dia4')">
+        Dia 8 de novembro - Sábado
+      </button>
+      <ul id="dia4" class="dia-conteudo">
+        <li><strong>09:00 as 10:30</strong> - Palestra: "O Que Ninguém Te Conta Sobre Uma Usina de Concreto" <div
+            class="palestrantes-lista">
+            <div class="palestrante-item">
+              <img src="imagens/Fábio Augustin.jpg" alt="Fábio Augustin" />
+              <div class="info-palestrante">
+                <p class="nome">Fábio Augustin</p>
+                <p class="cargo">Engenheiro Civil na Aditibras - Especialista em Tecnologia do Concreto</p>
+              </div>
+            </div>
+        </li>
+        <li><strong>10:30 as 12:00</strong> - "Genesis" <span class="palestrante">Com especialistas convidados</span>
+        </li>
+        <li><strong>14:00 as 15:30</strong> - Palestra: "Inovação, Tradição e Responsabilidade na Construção do Futuro"
+          <span class="palestrante">Com especialistas convidados</span>
+        </li>
+        <li><strong>15:30 as 17:00</strong> - Palestra <span class="palestrante">Com especialistas convidados</span>
+        </li>
+      </ul>
+    </section>
 
     <div style="text-align: center;">
       <a href="index.html" class="botao voltar">Voltar</a>
@@ -88,7 +86,8 @@
     <p>&copy; 2025 Unifeso. Desenvolvido por Caio G. Silva.</p>
   </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>

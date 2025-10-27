@@ -12,12 +12,20 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--cor-clara);
   color: var(--cor-escura);
   line-height: 1.6;
@@ -186,7 +194,7 @@ footer {
 }
 
 .temporizador {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -197,7 +205,7 @@ footer {
 }
 
 .contador {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -257,10 +265,10 @@ footer {
 .apoio-redondo img {
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  height: 100px;          
-  width: 100px;          
-  object-fit: cover;      
-  padding: 6px;           
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  padding: 6px;
 }
 
 .topo {
