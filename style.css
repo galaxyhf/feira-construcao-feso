@@ -335,3 +335,8 @@ footer {
   opacity: 1;
   margin-bottom: 2rem;
 }
+
+.autor {
+  color: #c7a007;
+  font-weight: bold;
+}
