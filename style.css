@@ -208,6 +208,14 @@ footer {
 .horario-item .acesso {
   color: #cccccc;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.horario-item .acesso svg {
+  stroke: #cccccc;
+  flex-shrink: 0;
 }
 
 /* Localização */
@@ -227,7 +235,7 @@ footer {
 
 /* Redes Sociais */
 .footer-redes .redes-title {
-  color: #ffffff;
+  color: var(--cor-amarelo);
   font-weight: 600;
   font-size: 1.05rem;
   margin-bottom: 1rem;
@@ -243,7 +251,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: var(--cor-amarelo);
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -251,19 +259,19 @@ footer {
 }
 
 .social-item:hover {
-  color: #ffffff;
+  color: var(--cor-amarelo);
   transform: translateX(5px);
 }
 
 .social-item svg {
   width: 20px;
   height: 20px;
-  fill: var(--cor-amarelo);
+  fill: #ffffff;
   transition: fill 0.3s ease;
 }
 
 .social-item:hover svg {
-  fill: #ffffff;
+  fill: var(--cor-amarelo);
 }
 
 /* Footer Bottom */
