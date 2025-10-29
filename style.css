@@ -155,7 +155,7 @@ footer {
 }
 
 .footer-logo-img {
-  width: 150px;
+  width: 200px;
   height: auto;
 }
 
@@ -318,7 +318,7 @@ footer {
   }
 
   .footer-logo-img {
-    width: 120px;
+    width: 160px;
   }
 
   .footer-section {
@@ -358,7 +358,7 @@ footer {
 
 @media (max-width: 480px) {
   .footer-logo-img {
-    width: 100px;
+    width: 160px;
   }
 
   .horario-item p {
