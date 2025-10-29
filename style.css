@@ -233,6 +233,14 @@ footer {
   color: #ffffff;
 }
 
+.mapa-container {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Redes Sociais */
 .footer-redes .redes-title {
   color: var(--cor-amarelo);
