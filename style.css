@@ -131,11 +131,256 @@ ul li {
   color: #ffffff;
 }
 
+/* Footer Profissional */
 footer {
-  background-color: var(--cor-azul);
+  background: var(--cor-azul);
   color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Horários */
+.footer-horarios {
+  gap: 1.5rem;
+}
+
+.horario-item {
+  margin-bottom: 1rem;
+}
+
+.horario-item p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.horario-item p svg {
+  flex-shrink: 0;
+}
+
+.horario-item .data {
+  color: var(--cor-amarelo);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.horario-item .data svg {
+  stroke: var(--cor-amarelo);
+}
+
+.horario-item .horario {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.horario-item .horario svg {
+  stroke: #ffffff;
+}
+
+.horario-item .acesso {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Localização */
+.footer-localizacao .local-title {
+  color: var(--cor-amarelo);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-localizacao .local-info {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Redes Sociais */
+.footer-redes .redes-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.social-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--cor-amarelo);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0;
+}
+
+.social-item:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.social-item svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--cor-amarelo);
+  transition: fill 0.3s ease;
+}
+
+.social-item:hover svg {
+  fill: #ffffff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1.5rem;
   text-align: center;
-  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-bottom p {
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom .developer {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-bottom .developer strong {
+  color: var(--cor-amarelo);
+  font-weight: 600;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-logo {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-logo-img {
+    width: 120px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-horarios {
+    gap: 1rem;
+  }
+
+  .horario-item p {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .footer-localizacao .local-title,
+  .footer-localizacao .local-info {
+    text-align: center;
+  }
+
+  .social-links-list {
+    align-items: center;
+  }
+
+  .social-item {
+    justify-content: center;
+  }
+
+  .social-item:hover {
+    transform: translateX(0) scale(1.05);
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo-img {
+    width: 100px;
+  }
+
+  .horario-item p {
+    font-size: 0.85rem;
+  }
+
+  .horario-item .data,
+  .horario-item .horario {
+    font-size: 0.85rem;
+  }
+
+  .footer-localizacao .local-info {
+    font-size: 0.85rem;
+  }
+
+  .social-item {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
 }
 
 .palestrante {
